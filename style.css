@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    background-image: url(Files/village.png);
+    background-image: url(Files/bg.png);
     backdrop-filter: blur(5px);
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@ body {
 
 .image-section {
     flex: 1;
-    background-image: url(Files/village-bg.png);
+    background-image: url(Files/village.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: center;
