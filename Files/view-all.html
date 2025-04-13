@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Plans</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a202c;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #2d3748;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 95%;
+            overflow-x: auto;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+
+            padding: 12px;
+            border: 1px solid #4a5568;
+        }
+
+        th {
+            background-color: #4a5568;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #3182ce;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #3c9ef9;
+        }
+
+        .actions {
+            margin-top: 20px;
+        }
+
+        .note {
+            margin-top: 10px;
+            font-style: italic;
+            color: #cbd5e0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>📜 All Available Plans and Services</h1>
+        <p class="note">Below is a list of all plans and services. You can edit, delete, or add new entries.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Plan Id</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Date From</th>
+                    <th>Date To</th>
+                    <th>Important Note</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>221701</td>
+                    <td>Rastriya Krishi Vikas Yojna</td>
+                    <td>Under this scheme, farmers will receive free fertilizers and seeds. Training sessions will also
+                        be organized to improve crop yield and promote sustainable farming practices.</td>
+                    <td>01 MAY 2025</td>
+                    <td>31 JUN 2025</td>
+                    <td>Bring ID proof on visit.</td>
+                    <td>
+                        <button class="btn" onclick="window.open('update.html', '_blank')">Edit</button>
+                        <button class="btn" onclick="window.open('coming-soon.html', '_blank')">Remove</button>
+                        <button class="btn" onclick="window.open('../Files/krishi.jpg', '_blank')">View Banner</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>221702</td>
+                    <td>Rastriya Gramin Swasthya Mission</td>
+                    <td>This plan includes the construction of a new healthcare center in the village, along with free monthly health check-ups for all villagers.</td>
+                    <td>01 FEB 2025</td>
+                    <td>31 JUL 2025</td>
+                    <td>Bring ID proof on visit.</td>
+                    <td>
+                        <button class="btn" onclick="window.open('update.html', '_blank')">Edit</button>
+                        <button class="btn" onclick="window.open('coming-soon.html', '_blank')">Remove</button>
+                        <button class="btn" onclick="window.open('../Files/krishi.jpg', '_blank')">View Banner</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>221703</td>
+                    <td>Sarva Siksha Abhiyaan</td>
+                    <td>To promote education, scholarships will be provided to students from economically weaker sections. A new library with free Wi-Fi will also be set up.</td>
+                    <td>01 MAY 2024</td>
+                    <td>29 DEC 2025</td>
+                    <td>Bring ID proof on visit.</td>
+                    <td>
+                        <button class="btn" onclick="window.open('update.html', '_blank')">Edit</button>
+                        <button class="btn" onclick="window.open('coming-soon.html', '_blank')">Remove</button>
+                        <button class="btn" onclick="window.open('../Files/krishi.jpg', '_blank')">View Banner</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>221704</td>
+                    <td>Pradhaan Mantri Gramin Sadak Yojna</td>
+                    <td>This scheme focuses on improving connectivity by building new roads and maintaining existing ones to ensure smooth transportation.</td>
+                    <td>22 MAY 2020</td>
+                    <td>22 MAY 2025</td>
+                    <td>Bring ID proof on visit.</td>
+                    <td>
+                        <button class="btn" onclick="window.open('update.html', '_blank')">Edit</button>
+                        <button class="btn" onclick="window.open('coming-soon.html', '_blank')">Remove</button>
+                        <button class="btn" onclick="window.open('../Files/krishi.jpg', '_blank')">View Banner</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>221705</td>
+                    <td>Swachh Bharat Abhiyan</td>
+                    <td>As part of this initiative, public toilets will be constructed, and waste management systems will be implemented to ensure cleanliness in the village.</td>
+                    <td>02 OCT 2022</td>
+                    <td>Till Now</td>
+                    <td>Bring ID proof on visit.</td>
+                    <td>
+                        <button class="btn" onclick="window.open('update.html', '_blank')">Edit</button>
+                        <button class="btn" onclick="window.open('coming-soon.html', '_blank')">Remove</button>
+                        <button class="btn" onclick="window.open('../Files/krishi.jpg', '_blank')">View Banner</button>
+                    </td>
+                </tr>
+                <!-- Add dynamic rows here -->
+            </tbody>
+        </table>
+
+        <div class="actions">
+            <button class="btn" onclick="window.open('upload.html', '_blank')">➕ Add New Plan</button>
+            <button class="btn" onclick="window.print()">🖨️ Print</button>
+            <button class="btn" onclick="window.open('coming-soon.html', '_blank')">📄 Download PDF</button>
+            <button class="btn" onclick="window.open('coming-soon.html', '_blank')">📊 Download XLS</button>
+        </div>
+    </div>
+</body>
+
+</html>
