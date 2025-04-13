@@ -23,7 +23,7 @@ body {
 
 .image-section {
     flex: 1;
-    background-image: url('Files/village.png');
+    background-image: url(Files/village.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: center;
