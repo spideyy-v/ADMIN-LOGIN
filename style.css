@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-image: url(Files/village.png);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    align-items: stretch;
+    width: 900px;
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.695);
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.image-section {
+    flex: 1;
+    background: url('files/village.png') no-repeat center center;
+    background-size: cover;
+}
+
+.form-section {
+    flex: 1;
+    align-items: baseline;
+    background-color: #ffffffd3;
+    padding: 40px;
+    display: flex;
+    max-width: 18pc;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-section .h1 {
+    color: #30668d;
+    margin-top: -1pc;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: -10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(48, 102, 141);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -20px;
+    transition: 0.3s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: #274a67;
+    box-shadow: rgb(48, 102, 141, 0.695);
+    transition: 0.3s ease-in-out;
+}
+
+.login-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #00000036;
+    font-size: small;
+    
+}
+
+#email-error, #password-error {
+    color: red;
+    background-color: #fff000;
+    font-size: small;
+    padding: 0px;
+}
+#login-message {
+    color: rgb(2, 105, 2);
+    background-color: #fff000;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-left: 5px;
+}
+
+.h1{
+    font-size: xx-large;
+    text-align: left;
+}
+.line{
+    width: 120px;
+    height: 3px;
+    background-color: #30668d;
+    border-radius: 1px;
+    margin-top: -29px;
+}
+em{
+    margin-top: -40px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-style: normal;
+    justify-content: left;
+    color: #0f0f0f70;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.v{
+    display: flex;
+}
+.form-group{
+    display: flex;
+    padding: 3px;
+    border-style: solid #fff;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: #ECECEC;
+    transition: 0.3s ease-in-out;
+}
+.form-group:hover {
+    display: flex;
+    padding: 3px;
+    border-style: solid #ffffff;
+    box-shadow: 0 4px 8px rgb(48, 102, 141, 0.695);
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: #ECECEC;
+    transition: 0.3s ease-in-out;
+}
+
+input[type=email], input[type=password]{
+    cursor: text;
+    border: none;
+    width: 15.5pc;
+    background-color: transparent;
+}
+.form-group input[type=email]::placeholder, input[type=password]::placeholder{
+    color: #B6B6B6;
+}
+.form-group input[type=email]::after, input[type=password]::after{
+    border: none;
+}
+.form-group label ion-icon{
+    margin-top: 10px;
+    color: #B6B6B6;
+}
+
+.form-group input:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.desktop{
+    display: none;
+}
+
+.logo {
+    display: flex;
+    width: 50px;
+}
+
+.form-group button ion-icon {
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .main{
+        display: none;
+    }
+    .desktop{
+        display: block;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        color: white;
+        background-color: #72C386;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+    body{
+        backdrop-filter: blur(10px);
+    }
+    img {
+        margin-top: 10pc;
+        display: block;
+        margin: 0 auto 25px;
+        width: 50%;
+    }
+    .show{
+        margin-top: 50%;
+    }
+}
